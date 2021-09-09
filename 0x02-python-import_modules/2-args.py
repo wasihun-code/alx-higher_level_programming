@@ -12,8 +12,9 @@ def printArguments():
     Return:
         0 since void
     """
-
-    if (l == 2):
+    if (l == 1):
+        print("0 arguments.")
+    elif (l == 2):
         print("{} argument:".format(l - 1))
         print("{}: {}".format(1, sys.argv[1]))
 
