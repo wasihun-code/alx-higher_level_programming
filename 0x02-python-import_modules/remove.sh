@@ -1,2 +1,4 @@
 #!/bin/bash
-rm *~ &&  rm -rf test/__pycache__ && rm __pycache__ && ls
+sudo rm -rf *~
+sudo rm -rf __pycache__
+ls -l
