@@ -1,2 +1,2 @@
 #!/bin/bash
-rm *~ && ls 
+rm *~ && && rm test/__pycache__ && rm __pycache__ && ls
