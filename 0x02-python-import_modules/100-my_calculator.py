@@ -22,4 +22,4 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-    print("{} {} {} = {}".format(num1, op, num2, res))
+    print("{:d} {:d} {} = {:d}".format(num1, op, num2, res))
