@@ -9,3 +9,12 @@ print_reversed_list_integer(my_list)
 
 my_list=[23, 56, 78, 52, 322]
 print_reversed_list_integer(my_list)
+
+my_list=[23, 56, 78, 52, 'hey']
+print_reversed_list_integer(my_list)
+
+my_list=[-23, 56, 78, 52, -322]
+print_reversed_list_integer(my_list)
+
+my_list=[23, 56, 78]
+print_reversed_list_integer(my_list)

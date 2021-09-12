@@ -2,11 +2,11 @@
 
 
 def element_at(my_list, idx):
-    for i in my_list:
-        if (idx < 0):
+    size = len(my_list)
+
+    if size <= 0:
+        return None
+    for i in range(0, size):
+        if idx < 0 or idx > size:
             return None
-            break
-        if (idx > len(my_list)):
-            return None
-            break
         return my_list[idx]

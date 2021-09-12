@@ -2,12 +2,12 @@
 
 
 def replace_in_list(my_list, idx, element):
-    for i in my_list:
-        if (idx < 0):
-            return None
-            break
-        if (idx > len(my_list)):
-            return None
-            break
-    my_list[idx] = element
+    size = len(my_list)
+
+    if size > 0:
+        for i in my_list:
+            if idx < 0 or idx > size:
+                continue
+            else:
+                my_list[idx] = element
     return my_list
