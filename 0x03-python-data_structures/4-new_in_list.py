@@ -2,14 +2,16 @@
 
 def new_in_list(my_list, idx, element):
 
-    new_list = []
     l = len(my_list)
+    new_list = []
 
-    for i in range(l):
-        if idx < 0 or idx > l:
-            new_list = my_list[:]
-        else:
-            new_list = my_list[:]
-            new_list[idx] = element
+    if l < 0:
+        return None
 
-        return new_list
+    if idx < 0 or idx > l - 1:
+        return my_list
+
+    new_list = my_list[:]
+    new_list[idx] = element
+
+    return new_list
