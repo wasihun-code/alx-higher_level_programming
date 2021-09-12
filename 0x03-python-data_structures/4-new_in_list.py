@@ -5,7 +5,7 @@ def new_in_list(my_list, idx, element):
     new_list = []
     l = len(my_list)
 
-    for i in range(0, l):
+    for i in range(l):
         if idx < 0 or idx > l:
             new_list = my_list[:]
         else:
