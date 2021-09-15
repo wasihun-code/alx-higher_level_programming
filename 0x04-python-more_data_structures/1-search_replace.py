@@ -5,7 +5,8 @@ def search_replace(my_list, search, replace):
 
     if my_list is None:
         return None
-    new = my_list
+
+    new = my_list.copy()
 
     for i in new:
         if i == search:
