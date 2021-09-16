@@ -1,0 +1,33 @@
+#ifndef LISTS_H_
+#define LISTS_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node
+{
+    int data;
+    struct node *left;
+    struct node *right;
+};
+
+    struct node *first = (struct node*)malloc(sizeof(struct node));
+    struct node *second= (struct node*)malloc(sizeof(struct node));
+    struct node *third = (struct node*)malloc(sizeof(struct node));
+
+    first->left = NULL;
+    first->data = 10;
+    first->right = second->left;
+
+    second->left = first->right;
+    second->data = 20;
+    second->right = third->left;
+
+    third->left = second->right;
+    third->data = 30;
+    third->right = NULL;
+
+int length(struct node *root);
+void display(struct node *root);
+
+#endif
