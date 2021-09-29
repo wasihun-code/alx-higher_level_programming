@@ -29,6 +29,7 @@ class Square:
         """Returns the area of a circle."""
         return (self.__size * self.__size)
     def my_print(self):
+        """Prints the square using hashtag."""
         if self.__size <= 0:
             print()
         else:
