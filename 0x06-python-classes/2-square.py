@@ -8,9 +8,11 @@ class Square:
         self.__size = size
 
     def get_size(self):
+        """getter function for validation."""
         return self.__size
 
     def set_size(self, x):
+        """Setter to check user input."""
         if x.isdigit():
             if (x < 0):
                 raise ValueError("size must be >= 0")
