@@ -59,12 +59,6 @@ class Rectangle:
     def __repr__(self):
         """Rrints string representation of rectangel able to create"""
 
-        if self.__width == 0 or self.__height == 0:
-            return ("")
-
-        rect = []
-        for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+        w, h = str(self.__width), str(self.__height)
+        rectangle = "Rectangle(" + w + ', ' + h + ')'
+        return rectangle
