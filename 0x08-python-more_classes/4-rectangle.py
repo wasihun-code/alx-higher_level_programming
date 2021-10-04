@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """Rectangle class with getter and setter."""
 
+
 class Rectangle:
     """Represents a rectangle class."""
+
     def __init__(self, width, height):
         self.__height = height
         self.__width = width
@@ -10,6 +12,7 @@ class Rectangle:
     @property
     def width(self):
         return self.__width
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -21,6 +24,7 @@ class Rectangle:
     @property
     def height(self):
         return self.__height
+
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
@@ -31,8 +35,8 @@ class Rectangle:
 
     def area(self):
         """Returns the area of a rectangle."""
-
         return (self.__width * self.__height)
+
     def perimeter(self):
         """Returns the perimeter of a rectangle."""
 
@@ -54,6 +58,7 @@ class Rectangle:
 
     def __repr__(self):
         """Rrints string representation of rectangel able to create"""
+
         if self.__width == 0 or self.__height == 0:
             return ("")
 
