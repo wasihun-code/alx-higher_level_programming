@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+""".Represents a rectangle class with setter and getter."""
+
 
 class Rectangle:
-
+    """Represents a rectangle class"""
     def __init__(self, width=0, height=0):
         self.__height = height
         self.__width = width
@@ -29,8 +31,10 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """Returns the area of teh rectangle."""
         return (self.__width * self.__height)
     def perimeter(self):
+        """Returns the perimeter of the rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
         return (2 * (self.__width + self.__height))
