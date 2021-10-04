@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Rectangle class with setter and getters"""
 
+
 class Rectangle:
     """.Represents a rectangle class."""
     def __init__(self, width=0, height=0):
