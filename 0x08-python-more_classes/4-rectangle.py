@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Rectangle class with getter and setter."""
 
-
 class Rectangle:
+    """Represents a rectangle class."""
     def __init__(self, width, height):
         self.__height = height
         self.__width = width
@@ -53,9 +53,7 @@ class Rectangle:
         return ("".join(rect))
 
     def __repr__(self):
-        """Rrints string representation of rectangele able to create
-        it again"""
-
+        """Rrints string representation of rectangel able to create"""
         if self.__width == 0 or self.__height == 0:
             return ("")
 
