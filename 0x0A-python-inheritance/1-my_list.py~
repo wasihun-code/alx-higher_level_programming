@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+"""a class that inherits from list."""
+
+
+class MyList(list):
+        """Inherits from A list super class."""
+
+        def print_sorted(self):
+            """Prints the list in sorted assencing order."""
+            for i in range(0, len(self)):
+                print("{}".format(self[i]))
