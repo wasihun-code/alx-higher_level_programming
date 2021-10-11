@@ -3,4 +3,4 @@
 def lookup(obj):
     """Returns a list object of available attributes and methods."""
 
-    return list(dir(obj))
+    return (obj.__dict__)
