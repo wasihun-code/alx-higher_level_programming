@@ -6,8 +6,8 @@ class Student:
     """Student class"""
 
     def __init__(self, first_name, last_name, age):
-        """Instantiation function for student 
-        
+        """Instantiation function for student
+
         Args:
             first_name (str): the first name of the student
             last_name (str): the last name of the student
@@ -21,7 +21,7 @@ class Student:
     def to_json(self, attrs=None):
         """Returns a dictionary representation of an object or
         a dictionary representation of all string attributes
-        
+
         Args:
             attrs (list): attributes to return
 
@@ -39,5 +39,3 @@ class Student:
             if string in self.__dict__.keys():
                 string_dict[string] = self.__dict__[string]
         return string_dict
-        
-

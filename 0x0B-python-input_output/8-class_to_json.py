@@ -3,10 +3,9 @@
 
 def class_to_json (obj):
     """Returns a dictionary representation of an object for JSON serializing
-    
-    Args: 
+
+    Args:
         obj (class object): the object to be serialized
     """
 
     return obj.__dict__
-    

@@ -5,11 +5,11 @@ import json
 
 def load_from_json_file(filename):
     """Takes a JSON string and returns the object from a file
-    
-    Args: 
+
+    Args:
         filename (str): the file to load the string from
-        
-    Returns: 
+
+    Returns:
         the JSON object represented by the string in the file
     """
 
