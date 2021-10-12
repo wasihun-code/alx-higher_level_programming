@@ -11,4 +11,4 @@ def read_file(filename=""):
 
     with open(filename, encoding='utf-8') as a_file:
         for i in a_file:
-            print(a, end="")
+            print(i, end="")
