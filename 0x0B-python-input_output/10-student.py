@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Documentation for a Student class"""
 
+
 class Student:
 
     """Student class"""

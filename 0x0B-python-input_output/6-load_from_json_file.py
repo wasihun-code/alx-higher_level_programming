@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """Documentation for a load_from_json"""
 
+
 import json
+
 
 def load_from_json_file(filename):
     """Takes a JSON string and returns the object from a file
