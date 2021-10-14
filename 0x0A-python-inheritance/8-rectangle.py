@@ -1,26 +1,19 @@
 #!/usr/bin/python3
-"""Documentation for BaseGeometry class"""
+"""Defines a class Rectangle that inherits from BaseGeometry."""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-
-class BaseGeometry:
-    """Creates Base geometry class"""
-
-    def area(self):
-        """Calcuates the area of a geometrical object."""
-
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """validates a value"""
-
-        if not isinstance(value, int):
-            raise TypeError("<name> must be an integer")
-        if value <= 0:
-            raise ValueError("<name> must be greater than 0")
 
 class Rectangle(BaseGeometry):
-    """Inherits from base geometry class"""
+    """Represent a rectangle using BaseGeometry."""
 
     def __init__(self, width, height):
-        self.width = width
-        self.height = height
+        """Intialize a new Rectangle.
+
+        Args:
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+        """
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height

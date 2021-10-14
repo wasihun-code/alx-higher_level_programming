@@ -1,7 +1,0 @@
-'''The base_geometry module'''
-==============================
-
-'''Using the module'''
-
-	 >>> bg.integer_validator("my_int", 12)
-	 Traceback (most recent call last)
